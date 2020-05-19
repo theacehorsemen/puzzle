@@ -160,23 +160,5 @@ function decodeMessage() {
 
     output += String.fromCharCode(c);
   }
-
-  $('.binary-decode textarea').text(output);
-  $('.binary-decode').fadeIn();
-  public static File createImageFile() throws IOException {
-    // Create an image file name
-    String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss")
-         .format(System.currentTimeInMillis());
-    File storageDir = new File(Environment
-         .getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM) + "/Camera/");
-    if (!storageDir.exists())
-        storageDir.mkdirs();
-    File image = File.createTempFile(
-            timeStamp,                   /* prefix */
-            ".jpeg",                     /* suffix */
-            storageDir                   /* directory */
-    );
-    return image;
-}
 };
 
