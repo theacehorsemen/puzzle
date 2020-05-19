@@ -160,5 +160,7 @@ function decodeMessage() {
 
     output += String.fromCharCode(c);
   }
-};
 
+  $('.binary-decode textarea').text(output);
+  $('.binary-decode').fadeIn();
+};
